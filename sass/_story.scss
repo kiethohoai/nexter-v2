@@ -1,5 +1,52 @@
 .story {
-  background-color: blue;
+  background-color: $color-grey-light-1;
   grid-column: 2 / -1;
   grid-row: 3 / 4;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  // Picture
+  &__pictures {
+    background-image: linear-gradient(
+        to right,
+        rgba(198, 153, 99, 0.5),
+        rgba(198, 153, 99, 0.5)
+      ),
+      url(../img/back.jpg);
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    img {
+    }
+
+    &--1 {
+      width: 100%;
+      grid-column: 2 / 6;
+      grid-row: 2 / 6;
+    }
+
+    &--2 {
+      width: 110%;
+      grid-column: 4 / -1;
+      grid-row: 4 / -1;
+      z-index: 10;
+    }
+  }
+
+  // Content
+  &__content {
+    padding: 6rem 5vw;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+
+    &--text {
+      font-size: 1.6rem;
+      font-style: italic;
+    }
+  }
 }
