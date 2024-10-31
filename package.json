@@ -1,0 +1,16 @@
+{
+  "name": "nexter-v2",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "sv": "live-server",
+    "sass": "sass --watch sass/main.scss css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.80.5"
+  }
+}
