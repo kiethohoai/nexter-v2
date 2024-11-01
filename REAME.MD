@@ -6,3 +6,4 @@ $5 Gallery Layout
 #6 Footer Layout
 #7 Header Layout
 #8 Realtors Layout
+#9 Sidebar Layout

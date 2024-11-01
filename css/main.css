@@ -313,9 +313,18 @@ body {
 }
 
 .sidebar {
-  background-color: orange;
+  background-color: #c69963;
   grid-column: 1/2;
   grid-row: 1/-1;
+}
+.sidebar > *:not(:last-child) {
+  margin-bottom: 0.9rem;
+}
+.sidebar__dot {
+  width: 65%;
+  height: 0.2rem;
+  background-color: #fff;
+  margin: 1.5rem auto 0;
 }
 
 .story {
