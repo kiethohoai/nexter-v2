@@ -4,3 +4,4 @@
 $4 Homes Layout
 $5 Gallery Layout
 #6 Footer Layout
+#7 Header Layout

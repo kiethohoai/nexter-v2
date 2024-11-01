@@ -171,9 +171,58 @@ body {
 }
 
 .header {
-  background-color: green;
   grid-column: 2/9;
   grid-row: 1/2;
+  padding: 4rem 15rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: linear-gradient(to right, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.header__logo {
+  width: 15rem;
+  align-self: start;
+  justify-self: center;
+}
+.header__content {
+  align-self: center;
+}
+.header__hedding--3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.header__heding--1 {
+  margin-bottom: 2rem;
+}
+.header__logos {
+  align-self: end;
+  margin-bottom: 2rem;
+}
+.header__logos--text {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #aaa;
+  margin-bottom: 1.3rem;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 1fr;
+  align-items: center;
+}
+.header__logos--text::before, .header__logos--text::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #aaa;
+}
+.header__logos--images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.header__logos--images img {
+  display: block;
+  width: 10rem;
+  align-self: center;
+  opacity: 0.7;
 }
 
 .homes {
@@ -275,6 +324,14 @@ body {
   font-style: italic;
 }
 
+.heading-1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.3rem;
+  letter-spacing: -1px;
+  color: #fff;
+  font-weight: 500;
+}
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -287,6 +344,7 @@ body {
   text-transform: uppercase;
   font-size: 1.6rem;
   color: #b28451;
+  letter-spacing: 3px;
 }
 
 .heading-4 {
@@ -304,6 +362,11 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.6rem;
   cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+}
+.btn:hover {
+  background-color: #b28451;
 }
 
 .mb-sm {

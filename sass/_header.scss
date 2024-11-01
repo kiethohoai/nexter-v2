@@ -1,5 +1,72 @@
 .header {
-  background-color: green;
   grid-column: 2 / 9;
   grid-row: 1 / 2;
+
+  padding: 4rem 15rem;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(16, 29, 44, 0.9),
+      rgba(16, 29, 44, 0.9)
+    ),
+    url(../img/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  &__logo {
+    width: 15rem;
+    align-self: start;
+    justify-self: center;
+  }
+
+  &__content {
+    align-self: center;
+  }
+
+  &__hedding--3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__heding--1 {
+    margin-bottom: 2rem;
+  }
+
+  &__logos {
+    align-self: end;
+    margin-bottom: 2rem;
+
+    &--text {
+      text-align: center;
+      font-size: 1.6rem;
+      color: $color-grey-light-2;
+      margin-bottom: 1.3rem;
+
+      display: grid;
+      grid-template-columns: 1fr 0.3fr 1fr;
+      align-items: center;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid $color-grey-light-2;
+      }
+    }
+
+    &--images {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+
+      img {
+        display: block;
+        width: 10rem;
+        align-self: center;
+        opacity: 0.7;
+      }
+    }
+  }
 }

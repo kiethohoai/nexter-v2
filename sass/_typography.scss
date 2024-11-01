@@ -1,3 +1,11 @@
+.heading-1 {
+  font-family: $font-display;
+  font-size: 4.3rem;
+  letter-spacing: -1px;
+  color: #fff;
+  font-weight: 500;
+}
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -10,6 +18,7 @@
   text-transform: uppercase;
   font-size: 1.6rem;
   color: $color-primary-dark;
+  letter-spacing: 3px;
 }
 
 .heading-4 {
@@ -27,6 +36,12 @@
   font-family: $font-display;
   font-size: 1.6rem;
   cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
 }
 
 // SPACING
