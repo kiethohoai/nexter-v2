@@ -3,3 +3,4 @@
 #3 Story Layout
 $4 Homes Layout
 $5 Gallery Layout
+#6 Footer Layout
