@@ -20,9 +20,6 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
 
-    img {
-    }
-
     &--1 {
       width: 100%;
       grid-column: 2 / 6;
